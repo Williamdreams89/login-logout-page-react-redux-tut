@@ -66,19 +66,18 @@ The following reducer function supports the increase and decrease of a counter s
  <code>import {createSlice} from "@reduxjs/toolkit"</code>
  The <code>{createSlice} function</code> allows you to create your reducers in a very easy way where it becomes intuitive for you to split your logic and be able to access it throughout your application so that it become a lot easier for you to change stuffs and access those values in different components.
  <br />
- ## <code>View</code>
+
  
- export const userSlice = createSlice({
-     name: "user", 
-     initialState: {value:{name: "", age: 0, email:""}}, 
-     reducers: login: (state, action)=>{state.value = action.payload}
- })
+<code> export const userSlice = createSlice({name: "user", initialState: {value:{name: "", age: 0, email:""}}, reducers: login: (state, action)=>{state.value = action.payload}})</code>
 <br />
- export default userSlice.reducer;
+ <code>export default userSlice.reducer;</code>
  <br />
  <br />
-## E X P L A N A T I O N
+### E X P L A N A T I O N
  As explained initially, the <code>createSlice</code> makes it possibly easier to create reducers and make it accessible throughout your application.
   It is taking the following props: name (which is the name of the state), initialState (which is the initial state of the component as it names echoes) and reducers (which as defined above takes 2 parameters: <code>state</code> and <code>action</code>).
+ -- The <code>name</code> of the state is <code>user</code>
+ -- The <code>initialState</code> of <code>user</code> is passed some values i would want change dynamically in time in the <code>reducer function</code> i would be creating. For example, on logging in, a name which has an initial value of empty string, age set to 0 years and empty email.
+ -- In the <code>reducers</code>, i would create a reducer function called <code>login</code>. Obvious for all reducers, login would take 2 params <code>state</code> and <code>action</code>. Where <code>state</code> holds the actual value of the current state or the initial state. So for example, if this is first time we are logging our user in it would take the initial state values and get changed when we alter those values. Briefly, it is just keeping track of the initial state. Whereas <code>action</code> is an object containing 2 things: <code>payload</code> and then <code>type</code>. The <code>payload</code> is an object which you can pass in the information you wanna use when changing your state. For example, <code>payload</code> can be used to create a function that return the first name of <code>name</code>
  
  
