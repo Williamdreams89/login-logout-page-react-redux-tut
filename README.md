@@ -33,3 +33,25 @@ Like this:  <br />
 Pass the <code> store</code> as props to the <code>&lt;Provider&gt;</code>; <code> &lt;Provider store={props}&gt;</code>. This would tell the <code>&lt;Provider&gt;</code> what <code>configStore instance</code> should be passed to our <code>&lt;App /&gt;</code> and therefore its embeded components, which is the <code>store</code>
 <br />
 
+## Reducer, What is it?
+The reducer is a pure function that accepts 2 parameters: the current state and an action object. Depending on the action object, the reducer function must update the state in an immutable manner, and return the new state. <br />
+A reducer is a function that takes in some information passed as arguments about current states of our application, for example, the current state of our application or components; and also an "action" that you wanna perform on the state and returns back the new state or value of the application.
+This is all bout state management with redux.
+<br />
+The following reducer function supports the increase and decrease of a counter state:
+
+<code>function reducer(state, action) { </code> <br />
+ <code> let newState; </code> <br />
+  <code> switch (action.type) {  </code> <br />
+ <code>    case 'increase':  </code>
+ <code>      newState = { counter: state.counter + 1 };  </code> <br />
+<code>      break; </code> <br />
+<code>    case 'descrease':
+<code>      newState = { counter: state.counter - 1 }; </code> <br />
+<code>      break; </code> <br />
+<code>    default: </code> <br />
+<code>      throw new Error(); </code> <br />
+<code>  } </code> <br />
+<code>  return newState; </code> <br />
+<code>}</code> <br />
+
