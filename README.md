@@ -40,6 +40,8 @@ This is all bout state management with redux.
 <br />
 The following reducer function supports the increase and decrease of a counter state:
 
+<code>For Example</code>
+<br />
 <code>function reducer(state, action) { </code> <br />
 <code>.... let newState; </code> <br />
 <code>.... switch (action.type) {  </code> <br />
@@ -55,5 +57,23 @@ The following reducer function supports the increase and decrease of a counter s
  <br />
 <code>....return newState; </code> <br />
  <br />
-<code>}</code> <br />
-
+<code>}</code>
+ 
+ ## Creating the User Profile Component
+ 
+ Create a <code>User.jsx</code> and within it, do the following:
+ <br/>
+ <code>import {createSlice} from "@reduxjs/toolkit"</code>
+ The <code>{createSlice} function</code> allows you to create your reducers in a very easy way where it becomes intuitive for you to split your logic and be able to access it throughout your application so that it become a lot easier for you to change stuffs and access those values in different components.
+ <br />
+ <code>export const userSlice = createSlice({name: "user", initialState: {value:{name: "", age: 0, email:""}}, reducers: login: (state, action)=>{state.value = action.payload}})</code>
+<br />
+ export default userSlice.reducer;
+ <br />
+ <br />
+### <code>E X P L A N A T I O N</code>
+ <br />
+ -- As explained initially, the <code>createSlice</code> makes it possibly easier to create reducers and make it accessible throughout your application.
+ -- It is taking the following props: name (which is the name of the state), initialState (which is the initial state of the component as it names echoes) and reducers (which as defined above takes 2 parameters: <code>state</code> and <code>action</code>).
+ 
+ 
