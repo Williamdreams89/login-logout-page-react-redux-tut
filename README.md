@@ -1,4 +1,6 @@
-# Installation
+# My React Redux Journey 
+
+## Installation
 
 <code>npm install redux react-redux @reduxjs/toolkit</code>
 
