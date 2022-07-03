@@ -16,7 +16,7 @@ Perhaps, the Login component is required to access one's profile and it requires
 <code>import { configStore } from "@reduxjs/toolkit";</code> <br />
 <code>const store = configStore({ reducer: {} })</code> <br />
 Next <code>import { Provider } from "react-redux";</code> <br />
-This would determine which components of your app can have access to your <code>store</code>. In this case, wrap the <code> &lt; App / &gt; </code> in <code>index.js</code> to include all the components within my app.
+This would determine which components of your app can have access to your <code>store</code>. In this case, wrap the <code>&lt;App /&gt;</code> in <code>index.js</code> to include all the components within my app.
 <br />
 Like this:  <br />
 <code> """</code>
@@ -29,5 +29,7 @@ Like this:  <br />
 <br />
 <code> """</code>
 <br />
-Pass the <code> store</code> as props to the Pro
+
+Pass the <code> store</code> as props to the <code>&lt;Provider&gt;</code>; <code> &lt;Provider store={props}&gt;</code>. This would tell the <code>&lt;Provider&gt;</code> what <code>configStore instance</code> should be passed to our <code>&lt;App /&gt;</code> and therefore its embeded components, which is the <code>store</code>
+<br />
 
