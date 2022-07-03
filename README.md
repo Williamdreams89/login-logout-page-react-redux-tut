@@ -16,5 +16,5 @@ Perhaps, the Login component is required to access one's profile and it requires
 <code>import { configStore } from "@reduxjs/toolkit";</code> <br />
 <code>const store = configStore({ reducer: {} })</code> <br />
 Next <code>import { Provider } from "react-redux";</code> <br />
-This would determine which components of your app can have access to your <code>store</code>. In this case, wrap the <code> "<App />" </code> in <code>index.js</code> to include all the components within my app.
+This would determine which components of your app can have access to your <code>store</code>. In this case, wrap the <code> &lt App / &gt </code> in <code>index.js</code> to include all the components within my app.
 
