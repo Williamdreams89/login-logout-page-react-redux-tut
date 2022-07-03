@@ -80,4 +80,15 @@ The following reducer function supports the increase and decrease of a counter s
  - The <code>initialState</code> of <code>user</code> is passed some values i would want change dynamically in time in the <code>reducer function</code> i would be creating. For example, on logging in, a name which has an initial value of empty string, age set to 0 years and empty email.
  - In the <code>reducers</code>, i would create a reducer function called <code>login</code>. Obvious for all reducers, login would take 2 params <code>state</code> and <code>action</code>. Where <code>state</code> holds the actual value of the current state or the initial state. So for example, if this is first time we are logging our user in it would take the initial state values and get changed when we alter those values. Briefly, it is just keeping track of the initial state. Whereas <code>action</code> is an object containing 2 things: <code>payload</code> and then <code>type</code>. The <code>payload</code> is an object which you can pass in the information you wanna use when changing your state. For example, <code>payload</code> can be used to create a function that return the first name of <code>name</code>. On the other hand, <code>action.type</code> can be used to trigger different types of actions you wanna take. Look beyond this tutorial for more on  <code>action.type</code>.
  - In the  <code>login reducer function</code>, we are going to set the state.value as equal to whatever we get from the <code>action.payload</code>
+ - Next is to export the userSlice and the userSlice.reducer to make available for imports from other components
+ 
+ ## Next and final Steps 
+ 
+- Now, back in <code>index.jsx</code>, <code>import userReducer from "./features/user"</code>. (Don't worry where the userReducer is from, its from nowhere, any name and react would recognize that). 
+ - Next, add the user reducer to the reducers object as <code>... user: userReducer</code> in the <code>store</code> <code>index.jsx</code> file.
+ - And that is it, we can now access this state and information accross all other components.
+ 
+ 
+ ## Using the state created 
+ 
  
