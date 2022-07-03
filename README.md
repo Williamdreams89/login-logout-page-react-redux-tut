@@ -5,7 +5,7 @@
 ## Introduction
 
 Supposing ypur app follows this structure:  
-<code>Profile</code> -------> <code>App</code> <------- <code>Log in</code>
+<code>Login</code> <------- <code>App</code> -------> <code>Profile</code>
 
 Perhaps, the Login component is required to access one's profile and it requires some initial state of the app to make its rendition when the initial state of the app changes. With this, one would have to create several number of states for several reasons and pass them as props to those components needing them. These come with their own ordeals and headaches and are quite error prone. The best way to deal with situation is to use a state management library. In this tutorial, I am introducing mysel to the redux state management library plus some dependencies.
 
