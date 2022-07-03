@@ -5,6 +5,8 @@
 ## Introduction
 
 Supposing ypur app follows this structure:  
-<code>
-<button style="color: white; background-color: #333">App</button>  
-</code>
+<code>App</code> -------> <code>Log in</code>
+^
+|
+|
+<code>Profile</code>
