@@ -73,7 +73,7 @@ The following reducer function supports the increase and decrease of a counter s
  <br />
 ### <code>E X P L A N A T I O N</code>
  <br />
- -- As explained initially, the <code>createSlice</code> makes it possibly easier to create reducers and make it accessible throughout your application.
- -- It is taking the following props: name (which is the name of the state), initialState (which is the initial state of the component as it names echoes) and reducers (which as defined above takes 2 parameters: <code>state</code> and <code>action</code>).
+ As explained initially, the <code>createSlice</code> makes it possibly easier to create reducers and make it accessible throughout your application.
+  It is taking the following props: name (which is the name of the state), initialState (which is the initial state of the component as it names echoes) and reducers (which as defined above takes 2 parameters: <code>state</code> and <code>action</code>).
  
  
