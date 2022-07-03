@@ -5,8 +5,6 @@
 ## Introduction
 
 Supposing ypur app follows this structure:  
-<code>App</code> -------> <code>Log in</code>
-^
-|
-|
-<code>Profile</code>
+<code>Profile</code> -------> <code>App</code> -------> <code>Log in</code>
+
+<hr />
