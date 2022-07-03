@@ -66,7 +66,12 @@ The following reducer function supports the increase and decrease of a counter s
  <code>import {createSlice} from "@reduxjs/toolkit"</code>
  The <code>{createSlice} function</code> allows you to create your reducers in a very easy way where it becomes intuitive for you to split your logic and be able to access it throughout your application so that it become a lot easier for you to change stuffs and access those values in different components.
  <br />
- <code>export const userSlice = createSlice({name: "user", initialState: {value:{name: "", age: 0, email:""}}, reducers: login: (state, action)=>{state.value = action.payload}})</code>
+ ##
+ export const userSlice = createSlice({
+     name: "user", 
+     initialState: {value:{name: "", age: 0, email:""}}, 
+     reducers: login: (state, action)=>{state.value = action.payload}
+ })
 <br />
  export default userSlice.reducer;
  <br />
