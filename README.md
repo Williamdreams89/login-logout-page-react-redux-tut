@@ -41,17 +41,19 @@ This is all bout state management with redux.
 The following reducer function supports the increase and decrease of a counter state:
 
 <code>function reducer(state, action) { </code> <br />
- <code> let newState; </code> <br />
-  <code> switch (action.type) {  </code> <br />
- <code>    case 'increase':  </code>
- <code>      newState = { counter: state.counter + 1 };  </code> <br />
-<code>      break; </code> <br />
-<code>    case 'descrease':
-<code>      newState = { counter: state.counter - 1 }; </code> <br />
-<code>      break; </code> <br />
+<code>.... let newState; </code> <br />
+<code>.... switch (action.type) {  </code> <br />
+ <code>........case 'increase':  </code>
+ <code>........newState = { counter: state.counter + 1 };  </code> <br />
+<code>.........break; </code> <br />
+<code>....case 'descrease':
+<code>........newState = { counter: state.counter - 1 }; </code> <br />
+<code>........break; </code> <br />
 <code>    default: </code> <br />
-<code>      throw new Error(); </code> <br />
-<code>  } </code> <br />
-<code>  return newState; </code> <br />
+<code>........throw new Error(); </code> <br />
+<code>....} </code> <br />
+ <br />
+<code>....return newState; </code> <br />
+ <br />
 <code>}</code> <br />
 
