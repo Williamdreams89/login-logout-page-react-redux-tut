@@ -93,5 +93,6 @@ The following reducer function supports the increase and decrease of a counter s
  
  ## Using the state created 
 - In order to use the state created the <code>useSelector Hook</code> must be used.
+ ## The <code><b>useSelector</b></code>, what is its usage and significance?
  
  
