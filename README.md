@@ -93,8 +93,12 @@ The following reducer function supports the increase and decrease of a counter s
  
  ## Using the state created 
 - In order to use the state created the <code>useSelector Hook</code> must be used.
+
+
  ## The <code><b>useSelector</b></code>, what is its usage and significance?
  - It is used to grab values of our state everytime we need to use it.
  - To use it, just instantiate the <code>useState Hook</code> on the state object you and that is it.
+ - The <code>useSelector</code> actually make you appreciate the essence of redux, as whenever it can be instantiated globally in all other components and works elegantly.
+ - The difference between <code>Redux useSelector Hook</code> and <code>React useState hook</code> is that, while <code>useState hook</code> renders locally, <code>Redux useSelector Hook</code> renders globally.
  
  
