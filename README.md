@@ -92,6 +92,6 @@ The following reducer function supports the increase and decrease of a counter s
  
  
  ## Using the state created 
-- In order to use the state 
+- In order to use the state created  
  
  
