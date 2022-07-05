@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../features/user";
+import { login, logout } from "../features/user";
 import styled from "styled-components";
 
 function Login() {
@@ -34,6 +34,23 @@ function Login() {
       >
         Login
       </StyledLoginBtn>
+      <button
+        style={{
+          backgroundColor: "blue",
+          position: "absolute",
+          top: 5,
+          right: "15px",
+          padding: "5px 10px",
+          border: "none",
+          borderRadius: "10px",
+          color: "white",
+          fontWeight: 700,
+        }}
+
+        onClick={()=>{dispatch(logout()); alert("Logout Successfully")}}
+      >
+        Logout
+      </button>
     </div>
   );
 }
