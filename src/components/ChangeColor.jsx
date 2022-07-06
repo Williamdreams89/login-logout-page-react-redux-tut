@@ -9,16 +9,9 @@ import { motion } from "framer-motion";
 export default function ChangeColor() {
   const dispatch = useDispatch();
   const [color, setColor] = useState("");
-  const StyledThemePage = styled.div`
-    .gear{
-      color: orangered;
-      font-size: 25px;
-      animation-name: loader;
-      animation
-    }
-  `;
+ 
   return (
-    <StyledThemePage>
+    <>
       <div
         style={{
           position: "absolute",
@@ -34,18 +27,23 @@ export default function ChangeColor() {
           onChange={(event) => {
             setColor(event.target.value);
           }}
+          placeholder="type in a color"
 
           
         />
-         
+        <motion.i
+          initial ={{"rotate" : "0deg"}}
+          animate ={{"rotate" : "360deg"}}
+          transition = {{duration: 2, repeat: Infinity}}
 
+        >
           <BsGearFill
             onClick={() => {
               dispatch(changeColor(color));
             }}
-            className="gear"
           />
+        </motion.i>
       </div>
-    </StyledThemePage>
+    </>
   );
 }
